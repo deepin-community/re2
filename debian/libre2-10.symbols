@@ -1,7 +1,7 @@
-libre2.so.9 libre2-9 #MINVER#
+libre2.so.10 libre2-10 #MINVER#
 * Build-Depends-Package: libre2-dev
-(arch= alpha  amd64  arm64  ia64  mips64  mips64el  ppc64  ppc64el  riscv64  s390x  sparc64  netbsd-alpha  kfreebsd-amd64  s390  avr32)#include "libre2.symbols.long_size_t"
-(arch=!alpha !amd64 !arm64 !ia64 !mips64 !mips64el !ppc64 !ppc64el !riscv64 !s390x !sparc64 !netbsd-alpha !kfreebsd-amd64 !s390 !avr32)#include "libre2.symbols.int_size_t"
+(arch= alpha  amd64  arm64  ia64  mips64  mips64el  ppc64  ppc64el  riscv64  s390x  sparc64  netbsd-alpha  kfreebsd-amd64  s390  avr32  loong64)#include "libre2.symbols.long_size_t"
+(arch=!alpha !amd64 !arm64 !ia64 !mips64 !mips64el !ppc64 !ppc64el !riscv64 !s390x !sparc64 !netbsd-alpha !kfreebsd-amd64 !s390 !avr32 !loong64)#include "libre2.symbols.int_size_t"
  _ZN3re211FilteredRE214PrintPrefilterEi@Base 20131024+dfsg
  _ZN3re211FilteredRE219RegexpsGivenStringsERKSt6vectorIiSaIiEEPS3_@Base 20131024+dfsg
  _ZN3re211FilteredRE23AddERKNS_11StringPieceERKNS_3RE27OptionsEPi@Base 20131024+dfsg
@@ -30,6 +30,7 @@ libre2.so.9 libre2-9 #MINVER#
  _ZN3re23RE23SetD1Ev@Base 20131024+dfsg
  _ZN3re23RE23SetD2Ev@Base 20131024+dfsg
  _ZN3re23RE23SetaSEOS1_@Base 20200801+dfsg
+ _ZN3re23RE245FUZZING_ONLY_set_maximum_global_replace_countEi@Base 20221201+dfsg
  _ZN3re23RE24InitERKNS_11StringPieceERKNS0_7OptionsE@Base 0+hg23
  _ZN3re23RE27ExtractERKNS_11StringPieceERKS0_S3_PNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE@Base 20150701+dfsg
  _ZN3re23RE27Options14kDefaultMaxMemE@Base 0+hg23

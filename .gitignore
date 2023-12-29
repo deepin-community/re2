@@ -1,1 +1,5 @@
-.pc/
+*.pyc
+*.orig
+core
+obj/
+benchlog.*

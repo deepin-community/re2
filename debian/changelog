@@ -1,3 +1,68 @@
+re2 (20230301-3) unstable; urgency=medium
+
+  * Add loong64 to the long_size_t archs in symbols. (Closes: #1054467)
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 01 Nov 2023 13:01:25 +0200
+
+re2 (20230301-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * Clean correctly.
+
+ -- Stefano Rivera <stefanor@debian.org>  Tue, 13 Jun 2023 22:38:17 -0400
+
+re2 (20230301-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Bump Standards-Version to 4.6.2, no changes needed.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 03 Mar 2023 09:10:12 -0400
+
+re2 (20230201-1) experimental; urgency=medium
+
+  * New upstream release.
+  * Drop the +dfsg repack, upstream has removed the XKCD cartoon.
+  * Refresh patches.
+  * Bump copyright years.
+
+ -- Stefano Rivera <stefanor@debian.org>  Sun, 05 Feb 2023 19:12:44 -0400
+
+re2 (20221201+dfsg-1) experimental; urgency=medium
+
+  [ Stefano Rivera ]
+  * New upstream release.
+  * Refresh patches.
+  * Switch watch file to GitHub tags, as the releases page layout has changed.
+  * Bump SONAME to libre2-10, following upstream.
+  * Update symbols.
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dpkg-dev and g++.
+    + libre2-9: Drop versioned constraint on libre2-dev in Replaces.
+    + libre2-9: Drop versioned constraint on libre2-dev in Breaks.
+
+ -- Stefano Rivera <stefanor@debian.org>  Mon, 09 Jan 2023 17:50:33 -0400
+
+re2 (20220601+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 01 Jun 2022 19:59:28 +0100
+
+re2 (20220401+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Stefano Rivera <stefanor@debian.org>  Fri, 01 Apr 2022 21:30:19 -0400
+
+re2 (20220201+dfsg-1) unstable; urgency=medium
+
+  * New upstream release.
+    - No longer declaring -std=c++11 in the .pc file. (Closes: #1003482)
+
+ -- Stefano Rivera <stefanor@debian.org>  Wed, 02 Feb 2022 11:52:37 -0400
+
 re2 (20211101+dfsg-1) unstable; urgency=medium
 
   * New upstream release.
