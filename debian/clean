@@ -1,0 +1,4 @@
+re2/__pycache__/
+re2/perl_groups.cc
+re2/unicode_casefold.cc
+re2/unicode_groups.cc

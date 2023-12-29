@@ -2,11 +2,6 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: RE2
 Upstream-Contact: The RE2 Authors <re2-dev@googlegroups.com>
 Source: https://github.com/google/re2
-Files-Excluded:
- doc/*xkcd*
- re2/perl_groups.cc
- re2/unicode_casefold.cc
- re2/unicode_groups.cc
 Comment: Source Repackaged:
  The included XKCD comic (in doc) is under the non-free Creative Commons
  Attribution-NonCommercial 2.5 License. It has been stripped from the Debian
@@ -16,7 +11,7 @@ Comment: Source Repackaged:
  have been stripped, as they are generated during building.
 
 Files: *
-Copyright: 2002-2020, Google Inc.,
+Copyright: 2002-2023, Google Inc.,
            2014,      Samsung Electronics,
            2010-2016, Stefano Rivera <stefanor@debian.org>
 License: BSD-3-google
@@ -56,7 +51,7 @@ License: Apache-2.0 with LLVM exception
  only in their entirety and only with respect to the Combined Software.
 
 Files: debian/*
-Copyright: 2010-2020, Stefano Rivera <stefanor@debian.org>
+Copyright: 2010-2023, Stefano Rivera <stefanor@debian.org>
 License: BSD-3-google
 
 License: BSD-3-google
