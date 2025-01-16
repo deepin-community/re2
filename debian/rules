@@ -1,11 +1,12 @@
 #!/usr/bin/make -f
 
-export DEB_CXXFLAGS_MAINT_APPEND=-pthread -Wall -std=c++11
+export DEB_CXXFLAGS_MAINT_APPEND=-pthread -Wall -std=c++14
 export DEB_LDFLAGS_MAINT_APPEND=-pthread
 export CXXFLAGS=$(shell dpkg-buildflags --get CXXFLAGS | sed s/-O2/-O3/)
 
 DEB_HOST_MULTIARCH ?= $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-LIB_PKG = libre2-10
+LIB_PKG = libre2-11
+ABI_PKG = $(LIB_PKG)-absl$(shell pkgconf --modversion absl_base)
 
 %:
 	dh $@
@@ -16,6 +17,11 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	dh_auto_install -- prefix=/usr libdir=/usr/lib/$(DEB_HOST_MULTIARCH)
+
+override_dh_makeshlibs:
+	echo "re2:Provides=$(ABI_PKG)" >> debian/$(LIB_PKG).substvars
+	dh_makeshlibs -p$(LIB_PKG) -V "$(ABI_PKG)"
+	dh_makeshlibs --remaining-packages
 
 override_dh_installdocs:
 	dh_installdocs --link-doc=$(LIB_PKG)

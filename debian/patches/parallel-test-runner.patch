@@ -14,10 +14,10 @@ Forwarded: not-needed
  1 file changed, 7 insertions(+), 1 deletion(-)
 
 diff --git a/Makefile b/Makefile
-index 34230ca..bafe910 100644
+index 65b52f6..9dee8de 100644
 --- a/Makefile
 +++ b/Makefile
-@@ -268,7 +268,13 @@ clean:
+@@ -284,7 +284,13 @@ clean:
  testofiles: $(TESTOFILES)
  
  .PHONY: test
