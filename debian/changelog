@@ -1,3 +1,9 @@
+re2 (20230301-3deepin1) unstable; urgency=medium
+
+  * feat: add sw64 support.
+
+ -- hudeng <hudeng@deepin.org>  Wed, 04 Jun 2025 16:23:53 +0800
+
 re2 (20230301-3) unstable; urgency=medium
 
   * Add loong64 to the long_size_t archs in symbols. (Closes: #1054467)
